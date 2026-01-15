@@ -1,0 +1,108 @@
+Relationships Between Bitcoin Prices and Regulation-Related News
+
+This project analyzes the relationship between Bitcoin price movements and regulation-related news coverage to evaluate whether regulatory events and media attention have a measurable impact on Bitcoin’s daily price changes.
+
+Rather than analyzing multiple cryptocurrencies, this study focuses exclusively on Bitcoin, allowing for clearer insights using historical price data and regulation-focused news articles.
+
+Research Questions
+
+Does regulation-related news correlate with daily percentage changes in Bitcoin price?
+
+Does the volume of regulation-related news articles influence Bitcoin price movement?
+
+Can machine learning models predict whether Bitcoin’s price will increase or decrease based on news-derived features?
+
+Methodology
+Data Collection
+
+Bitcoin historical price data
+
+Regulation-related news articles collected using NewsAPI
+
+Data Processing
+
+Cleaning and aligning price data with daily news article counts
+
+Feature engineering on:
+
+Daily percent price change
+
+News article volume
+
+Exploratory Data Analysis (EDA)
+
+Statistical summaries of Bitcoin price movements
+
+Comparison of price behavior on days with and without regulation-related news
+
+Visualization of trends between news volume and volatility
+
+Machine Learning Models
+
+Logistic Regression – classify price movement (up vs. down)
+
+Linear Regression – predict percent price change
+
+Random Forest Regression – model non-linear relationships
+
+Key Findings
+
+Regulation-related news demonstrates limited direct predictive power over Bitcoin’s daily price changes.
+
+Higher news volume does not consistently correspond to stronger positive or negative price movements.
+
+Machine learning models struggled to outperform baseline assumptions, highlighting Bitcoin’s high volatility and the influence of external market factors beyond news coverage alone.
+
+Tech Stack
+
+Python
+
+pandas, NumPy
+
+matplotlib, seaborn
+
+scikit-learn
+
+NewsAPI
+
+Jupyter Notebook
+
+Team Contributions
+
+Data Collection & EDA:
+
+Piotr Brozek
+
+Milan Joksimovic
+
+Data Cleaning & Preprocessing:
+
+Ashton Edakkunnathu
+
+Julius Salas
+
+Data Visualization:
+
+Ashton Edakkunnathu
+
+Usayd Hussein
+
+Machine Learning:
+
+Julius Salas
+
+Usayd Hussein
+
+Takeaway
+
+While regulation-related news is often assumed to significantly influence cryptocurrency markets, this project suggests that Bitcoin price behavior is far more complex. News sentiment and volume alone are insufficient predictors, emphasizing the challenges of applying traditional statistical and machine learning techniques to highly volatile financial assets.
+
+Future Improvements
+
+Incorporate sentiment analysis instead of article volume alone
+
+Expand analysis to intraday price data
+
+Include additional macroeconomic and market indicators
+
+Experiment with deep learning time-series models (LSTM, Transformers)
